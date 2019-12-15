@@ -1,0 +1,10 @@
+{
+  "width": 50,
+  "height": 50,
+  "startEnergy": 50,
+  "moveEnergy": 2,
+  "plantEnergy": 20,
+  "jugnleRatio": 0.3,
+  "energyToBreed": 25,
+  "startingAnimalsCount": 20
+}

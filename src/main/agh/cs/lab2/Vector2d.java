@@ -1,5 +1,7 @@
 package agh.cs.lab2;
 
+import java.util.Random;
+
 public class Vector2d {
     final public int x;
     final public int y;
@@ -46,6 +48,20 @@ public class Vector2d {
     }
     public Vector2d opposite(){
         return new Vector2d(this.x*-1, this.y*-1);
+    }
+
+    public static Vector2d createRandomVector(int width, int heigth){
+        return new Vector2d(new Random().nextInt(width), new Random().nextInt(heigth));
+    }
+
+    public Vector2d returnNotOutOfBounds(Vector2d upperRight){
+        int xx = this.x;
+        int yy = this.y;
+        if(xx >= upperRight.x) xx -= upperRight.x;
+        if(xx < 0) xx += upperRight.x;
+        if(y >= upperRight.y) yy -= upperRight.y;
+        if(y < 0) yy += upperRight.y;
+        return new Vector2d(xx,yy);
     }
 
     @Override

@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8eda9027-7d32-49cf-9268-94d77d03e276" name="Default Changelist" comment="" />
+    <list default="true" id="8eda9027-7d32-49cf-9268-94d77d03e276" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_github_cliftonlabs_json_simple_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/CarInformationFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Genes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/PositionFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/PositionPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Simulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/agh/cs/lab2/GenesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/AbstractWorldMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/IPositionChangeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/IPositionChangeObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/IWorldMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapBoundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MoveDirection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/OptionsParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/RectangularMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/UnboundedMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2dXcomparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2dYcomparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/MapDirectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/OptionsParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/UnboundedMapTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,7 +51,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="ProjectId" id="1RvP4TgQmlGzHP8eoPogR2GK340" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,6 +75,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -70,6 +117,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GenesTest.testChild" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.GenesTest" />
+      <option name="METHOD_NAME" value="testChild" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenesTest.testRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.GenesTest" />
+      <option name="METHOD_NAME" value="testRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MapDirectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab2" />
       <extension name="coverage">
@@ -100,46 +187,6 @@
       <option name="PACKAGE_NAME" value="agh.cs.lab2" />
       <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.UnboundedMapTest" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnboundedMapTest.objectAtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.cs.lab2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.UnboundedMapTest" />
-      <option name="METHOD_NAME" value="objectAtTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnboundedMapTest.runTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.cs.lab2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.UnboundedMapTest" />
-      <option name="METHOD_NAME" value="runTest" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -183,16 +230,16 @@
       <item itemvalue="Application.World" />
       <item itemvalue="JUnit.MapDirectionTest" />
       <item itemvalue="JUnit.UnboundedMapTest" />
-      <item itemvalue="JUnit.UnboundedMapTest.objectAtTest" />
-      <item itemvalue="JUnit.UnboundedMapTest.runTest" />
+      <item itemvalue="JUnit.GenesTest.testRandom" />
+      <item itemvalue="JUnit.GenesTest.testChild" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.World" />
+        <item itemvalue="JUnit.GenesTest.testChild" />
+        <item itemvalue="JUnit.GenesTest.testRandom" />
         <item itemvalue="JUnit.UnboundedMapTest" />
         <item itemvalue="JUnit.MapDirectionTest" />
-        <item itemvalue="JUnit.UnboundedMapTest.runTest" />
-        <item itemvalue="JUnit.UnboundedMapTest.objectAtTest" />
       </list>
     </recent_temporary>
   </component>
@@ -218,45 +265,149 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570544405328</updated>
+      <workItem from="1575738060447" duration="20374000" />
+      <workItem from="1575801762122" duration="17195000" />
+      <workItem from="1575983978564" duration="5985000" />
+      <workItem from="1576179960341" duration="9951000" />
+      <workItem from="1576325302166" duration="27707000" />
+      <workItem from="1576405469816" duration="29000" />
+      <workItem from="1576426313476" duration="11964000" />
+      <workItem from="1576444017731" duration="472000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="801" y="422" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575382364176">
+    <state x="550" y="191" width="800" height="677" key="#Deployment" timestamp="1576444084189">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="801" y="422" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1575382364176" />
+    <state x="550" y="191" width="800" height="677" key="#Deployment/0.27.1920.1008@0.27.1920.1008" timestamp="1576444084188" />
+    <state x="418" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575808916554">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="418" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1575808916554" />
+    <state x="768" y="242" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1576436104701">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="768" y="242" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575756622031" />
+    <state x="768" y="242" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1008@0.27.1920.1008" timestamp="1576436104701" />
+    <state x="801" y="422" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575738117174">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="801" y="422" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575738117174" />
+    <state x="801" y="422" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1575727251678" />
     <state x="538" y="188" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1575381941739">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="538" y="188" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1575381941739" />
-    <state x="743" y="288" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575381939016">
+    <state x="770" y="273" width="459" height="629" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1575735118878">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="743" y="288" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1575381939016" />
-    <state width="1874" height="297" key="GridCell.Tab.0.bottom" timestamp="1575382452464">
+    <state x="770" y="273" width="459" height="629" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1575735118878" />
+    <state x="693" y="279" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575750050762">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1874" height="297" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1575382452464" />
-    <state width="1874" height="297" key="GridCell.Tab.0.center" timestamp="1575382452462">
+    <state x="693" y="279" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575750050762" />
+    <state x="693" y="279" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1575727314844" />
+    <state x="694" y="345" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1576180769228">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1874" height="297" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1575382452462" />
-    <state width="1874" height="297" key="GridCell.Tab.0.left" timestamp="1575382452461">
+    <state x="694" y="345" width="524" height="484" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.27.1920.1008@0.27.1920.1008" timestamp="1576180769228" />
+    <state x="525" y="124" width="860" height="811" key="CommitChangelistDialog2" timestamp="1576444442324">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1874" height="297" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1575382452461" />
-    <state width="1874" height="297" key="GridCell.Tab.0.right" timestamp="1575382452463">
+    <state x="525" y="124" width="860" height="811" key="CommitChangelistDialog2/0.27.1920.1008@0.27.1920.1008" timestamp="1576444442324" />
+    <state x="743" y="288" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576180349309">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state width="1874" height="297" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1575382452463" />
-    <state x="449" y="165" key="SettingsEditor" timestamp="1575381500341">
+    <state x="743" y="288" width="424" height="484" key="FileChooserDialogImpl/0.27.1920.1008@0.27.1920.1008" timestamp="1576180349309" />
+    <state width="1874" height="264" key="GridCell.Tab.0.bottom" timestamp="1576443900112">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
-    <state x="449" y="165" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1575381500341" />
+    <state width="1874" height="326" key="GridCell.Tab.0.bottom/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="264" key="GridCell.Tab.0.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1576443900112" />
+    <state width="1874" height="454" key="GridCell.Tab.0.bottom/0.27.3840.1008@0.27.3840.1008" timestamp="1576000387180" />
+    <state width="1874" height="264" key="GridCell.Tab.0.center" timestamp="1576443900112">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.0.center/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="264" key="GridCell.Tab.0.center/0.27.1920.1008@0.27.1920.1008" timestamp="1576443900112" />
+    <state width="1874" height="454" key="GridCell.Tab.0.center/0.27.3840.1008@0.27.3840.1008" timestamp="1576000387029" />
+    <state width="1874" height="264" key="GridCell.Tab.0.left" timestamp="1576443900111">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.0.left/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="264" key="GridCell.Tab.0.left/0.27.1920.1008@0.27.1920.1008" timestamp="1576443900111" />
+    <state width="1874" height="454" key="GridCell.Tab.0.left/0.27.3840.1008@0.27.3840.1008" timestamp="1576000386963" />
+    <state width="1874" height="264" key="GridCell.Tab.0.right" timestamp="1576443900112">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.0.right/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="264" key="GridCell.Tab.0.right/0.27.1920.1008@0.27.1920.1008" timestamp="1576443900112" />
+    <state width="1874" height="454" key="GridCell.Tab.0.right/0.27.3840.1008@0.27.3840.1008" timestamp="1576000387113" />
+    <state width="1874" height="326" key="GridCell.Tab.1.bottom" timestamp="1575821477579">
+      <screen x="0" y="27" width="3840" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.1.bottom/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="326" key="GridCell.Tab.1.bottom/0.27.1920.1008@0.27.1920.1008" timestamp="1575813821367" />
+    <state width="1874" height="326" key="GridCell.Tab.1.bottom/0.27.3840.1008@0.27.3840.1008" timestamp="1575821477579" />
+    <state width="1874" height="326" key="GridCell.Tab.1.center" timestamp="1575821477579">
+      <screen x="0" y="27" width="3840" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.1.center/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="326" key="GridCell.Tab.1.center/0.27.1920.1008@0.27.1920.1008" timestamp="1575813821366" />
+    <state width="1874" height="326" key="GridCell.Tab.1.center/0.27.3840.1008@0.27.3840.1008" timestamp="1575821477579" />
+    <state width="1874" height="326" key="GridCell.Tab.1.left" timestamp="1575821477578">
+      <screen x="0" y="27" width="3840" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.1.left/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="326" key="GridCell.Tab.1.left/0.27.1920.1008@0.27.1920.1008" timestamp="1575813821366" />
+    <state width="1874" height="326" key="GridCell.Tab.1.left/0.27.3840.1008@0.27.3840.1008" timestamp="1575821477578" />
+    <state width="1874" height="326" key="GridCell.Tab.1.right" timestamp="1575821477579">
+      <screen x="0" y="27" width="3840" height="1008" />
+    </state>
+    <state width="1874" height="326" key="GridCell.Tab.1.right/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575762839974" />
+    <state width="1874" height="326" key="GridCell.Tab.1.right/0.27.1920.1008@0.27.1920.1008" timestamp="1575813821367" />
+    <state width="1874" height="326" key="GridCell.Tab.1.right/0.27.3840.1008@0.27.3840.1008" timestamp="1575821477579" />
+    <state x="443" y="165" width="1024" height="845" key="SettingsEditor" timestamp="1576180770502">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="449" y="165" key="SettingsEditor/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575738106063" />
+    <state x="443" y="165" width="1024" height="845" key="SettingsEditor/0.27.1920.1008@0.27.1920.1008" timestamp="1576180770502" />
+    <state x="555" y="266" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1576444247641">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="555" y="266" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1008@0.27.1920.1008" timestamp="1576444247641" />
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1575738063630">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="616" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575738063630" />
+    <state x="633" y="483" width="646" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576180768565">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="633" y="483" width="646" height="224" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1920.1008@0.27.1920.1008" timestamp="1576180768565" />
+    <state x="728" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576444488860">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="728" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1008@0.27.1920.1008" timestamp="1576444488860" />
     <state x="269" y="132" width="1372" height="796" key="new project wizard" timestamp="1575381545287">
       <screen x="0" y="27" width="1920" height="1008" />
     </state>
     <state x="269" y="132" width="1372" height="796" key="new project wizard/0.27.1920.1008@0.27.1920.1008" timestamp="1575381545287" />
+    <state x="624" y="242" key="run.anything.popup" timestamp="1576441156982">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="624" y="242" key="run.anything.popup/0.27.1920.1008/1920.0.1920.1080@0.27.1920.1008" timestamp="1575750302747" />
+    <state x="624" y="242" key="run.anything.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1576441156982" />
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup" timestamp="1576352899712">
+      <screen x="0" y="27" width="1920" height="1008" />
+    </state>
+    <state x="623" y="246" width="672" height="678" key="search.everywhere.popup/0.27.1920.1008@0.27.1920.1008" timestamp="1576352899712" />
   </component>
 </project>
