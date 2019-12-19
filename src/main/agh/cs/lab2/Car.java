@@ -23,7 +23,7 @@ public class Car implements IMapElement, Comparable<Car> {
         this.map = map;
         this.position = position;
         this.genes = genes;
-        this.energy = map.simulation.startEnergy;
+        this.energy = map.simulation.constants.startEnergy;
         this.direction = MapDirection.NORTH;
 
         kidList = new ArrayList<Car>();
@@ -31,7 +31,7 @@ public class Car implements IMapElement, Comparable<Car> {
 
 
     public void move() {
-        energy -= map.simulation.moveEnergy;
+        energy -= map.simulation.constants.moveEnergy;
         int turn = genes.takeRand();
 
         for(int i = 0; i < turn; i++)
@@ -90,13 +90,15 @@ public class Car implements IMapElement, Comparable<Car> {
 //        }
     }
 
-    public int ancestorsAmount(){
-        int ancestors = kidList.size();
-        for (Car pomCar : kidList){
-            ancestors += pomCar.ancestorsAmount();
+    public int kidAmountInEra(int era){
+        int count = 0;
+        for(Car i : kidList){
+            if(i.eraBorn <= era) count++;
         }
-        return ancestors;
+        return count;
     }
+
+
 
     @Override
     public int compareTo(Car car) {

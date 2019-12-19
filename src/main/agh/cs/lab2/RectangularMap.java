@@ -22,11 +22,11 @@ public class RectangularMap implements IPositionChangeObserver {
         upperRight = new Vector2d(width,height);
         this.simulation = simulation;
 
-        int jungleXWidth = (int) (simulation.jugnleRatio*upperRight.x/2);
+        int jungleXWidth = (int) (simulation.constants.jugnleRatio*upperRight.x/2);
         int jungleXStart = upperRight.x/2 - jungleXWidth;
         int jungleXEnd = upperRight.x/2 + jungleXWidth;
 
-        int jungleYWidth = (int) (simulation.jugnleRatio*upperRight.y/2);
+        int jungleYWidth = (int) (simulation.constants.jugnleRatio*upperRight.y/2);
         int jungleYStart = upperRight.x/2 - jungleYWidth;
         int jungleYEnd = upperRight.x/2 + jungleYWidth;
 
@@ -109,29 +109,6 @@ public class RectangularMap implements IPositionChangeObserver {
         }
     }
 
-    public void calculateInformations(){
-        Car maxCar = null;
-        int averageEnergy = 0;
-        int averageChildren = 0;
-        int averageAge = 0;
-
-        for (Iterator<Car> iterator = carList.iterator(); iterator.hasNext();) {
-            Car currentCar = iterator.next();
-            if(maxCar == null || maxCar.energy < currentCar.energy) maxCar = currentCar;
-            averageEnergy += currentCar.energy;
-            averageChildren += currentCar.kidList.size();
-            averageAge += currentCar.age;
-        }
-        simulation.averageEnergy = String.format("%.02f", (float) averageEnergy/(float) carList.size());
-        simulation.averageChildren = String.format("%.02f", (float) averageChildren/(float) carList.size());
-        simulation.averageAge = String.format("%.02f", (float) averageAge/(float) carList.size());
-
-
-
-        simulation.maxGene = maxCar.genes.toString();
-
-    }
-
     public void moveObjects(){
         for (Iterator<Car> iterator = carList.iterator(); iterator.hasNext();) {
             Car currentCar = iterator.next();
@@ -141,27 +118,44 @@ public class RectangularMap implements IPositionChangeObserver {
     }
 
     public void growHays(){
+//        List<Vector2d> tilesInJungleList = new ArrayList<Vector2d>();
+//        List<Vector2d> tilesInStepsList = new ArrayList<Vector2d>();
+//
+//
+//
+//        for (int i = lowerLeft.x; i < upperRight.x; i++){
+//            for (int j = lowerLeft.y; j < upperRight.y; j++){
+//                Vector2d testedTile = new Vector2d(i,j);
+//                if(!isOccupied(testedTile)){
+//                    if(inJungle(testedTile)) tilesInJungleList.add(testedTile);
+//                    else tilesInStepsList.add(testedTile);
+//                }
+//            }
+//        }
+//
+//        if(tilesInJungleList.size()>0){
+//            Vector2d jungleTile = tilesInJungleList.get(new Random().nextInt(tilesInJungleList.size()));
+//            hays.put(jungleTile, new HayStack(jungleTile));
+//        }
+//        if(tilesInStepsList.size()>0){
+//            Vector2d stepTile = tilesInStepsList.get(new Random().nextInt(tilesInStepsList.size()));
+//            hays.put(stepTile, new HayStack(stepTile));
+//        }
 
-        List<Vector2d> tilesInJungleList = new ArrayList<Vector2d>();
-        List<Vector2d> tilesInStepsList = new ArrayList<Vector2d>();
-
-        for (int i = lowerLeft.x; i < upperRight.x; i++){
-            for (int j = lowerLeft.y; j < upperRight.y; j++){
-                Vector2d testedTile = new Vector2d(i,j);
-                if(!isOccupied(testedTile)){
-                    if(inJungle(testedTile)) tilesInJungleList.add(testedTile);
-                    else tilesInStepsList.add(testedTile);
-                }
+        for(int i = 0; i < 1000; i++){
+            Vector2d pom = Vector2d.createRandomVectorOutsideJungle(lowerLeft, upperRight, lowerLeftJungle, upperRightJungle);
+            if(!isOccupied(pom)) {
+                hays.put(pom, new HayStack(pom));
+                break;
             }
         }
-
-        if(tilesInJungleList.size()>0){
-            Vector2d jungleTile = tilesInJungleList.get(new Random().nextInt(tilesInJungleList.size()));
-            hays.put(jungleTile, new HayStack(jungleTile));
-        }
-        if(tilesInStepsList.size()>0){
-            Vector2d stepTile = tilesInStepsList.get(new Random().nextInt(tilesInStepsList.size()));
-            hays.put(stepTile, new HayStack(stepTile));
+        for(int i = 0; i < 1000; i++){
+            Vector2d pom = Vector2d.createRandomVector(upperRightJungle.x-lowerLeftJungle.x, upperRightJungle.y-lowerLeftJungle.y);
+            pom = pom.add(lowerLeftJungle);
+            if(!isOccupied(pom)) {
+                hays.put(pom, new HayStack(pom));
+                break;
+            }
         }
     }
 
@@ -177,7 +171,7 @@ public class RectangularMap implements IPositionChangeObserver {
                     if(currentCars.get(0).energy == currentCars.get(i).energy) count++;
                     else break;
                 }
-                for(int i = 0; i < count; i++) currentCars.get(i).energy += simulation.plantEnergy/count;
+                for(int i = 0; i < count; i++) currentCars.get(i).energy += simulation.constants.plantEnergy/count;
 //                hays.remove(currentStack.getPosition());
                 iterator.remove();
 
@@ -191,7 +185,7 @@ public class RectangularMap implements IPositionChangeObserver {
             List<Car> list = iterator.next();
             if(list.size() >= 2){
                 Collections.sort(list, Collections.reverseOrder());
-                if(list.get(1).energy >= simulation.energyToBreed) {
+                if(list.get(1).energy >= simulation.constants.energyToBreed) {
                     Car newBaby = list.get(0).createBaby(list.get(1));
                     newBabys.add(newBaby);
                     newBaby.eraBorn = era;

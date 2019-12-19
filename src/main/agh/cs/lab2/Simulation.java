@@ -1,64 +1,34 @@
 package agh.cs.lab2;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Simulation {
 
-    RectangularMap map;
-
-    public int startEnergy;
-    public int moveEnergy;
-    public int plantEnergy;
-    public Double jugnleRatio;
-    public int energyToBreed;
-    public int width;
-    public int height;
+    public RectangularMap map;
+    public Constants constants;
     private PositionFrame positionFrame;
-    private int startingAnimalsCount;
     public boolean isRunning;
-
-    public String maxGene = "";
-    public String averageEnergy = "";
-    public String averageChildren = "";
-    public String averageAge = "";
+    public List<SimulationInformations> simulationInformations;
 
     public Simulation() throws InterruptedException {
-        setConstants();
-        map = new RectangularMap(this, width, height);
-        placeAdamAndEve(startingAnimalsCount);
+        constants = new Constants();
 
+        map = new RectangularMap(this, constants.width, constants.height);
+        positionFrame = new PositionFrame("Symulator", this, 900, 900);
+
+
+        try {
+            placeAdamAndEve(constants.startingAnimalsCount);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
+        simulationInformations = new ArrayList<SimulationInformations>();
+        simulationInformations.add(new SimulationInformations(this));
         positionFrame.start();
         startRunning();
-    }
-
-    private void setConstants(){
-        JSONParser parser = new JSONParser();
-
-        try (Reader reader = new FileReader("parameters.json")) {
-
-            JSONObject jsonObject = (JSONObject) parser.parse(reader);
-            width = Math.toIntExact((long) jsonObject.get("width"));
-            height = Math.toIntExact((long) jsonObject.get("height"));
-            startEnergy = Math.toIntExact((long) jsonObject.get("startEnergy"));
-            moveEnergy = Math.toIntExact((long) jsonObject.get("moveEnergy"));
-            plantEnergy = Math.toIntExact((long) jsonObject.get("plantEnergy"));
-            jugnleRatio = (Double) jsonObject.get("jugnleRatio");
-            energyToBreed = Math.toIntExact((long) jsonObject.get("energyToBreed"));
-            positionFrame = new PositionFrame("Symulator", this, 800, 800);
-            startingAnimalsCount = Math.toIntExact((long) jsonObject.get("startingAnimalsCount"));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
     }
 
     private void run() throws InterruptedException {
@@ -71,9 +41,9 @@ public class Simulation {
                     map.eat();
                     map.breed();
                     map.deleteDeadAnimals();
-                    map.calculateInformations();
+                    simulationInformations.add(new SimulationInformations(this));
                     positionFrame.drawNew();
-                    Thread.sleep(1000);
+                    Thread.sleep(50);
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -93,11 +63,17 @@ public class Simulation {
     }
 
 
-    private void placeAdamAndEve(int numberOfObjects){
-        for(int i = 0; i < numberOfObjects; i++){
-            Vector2d place = Vector2d.createRandomVector(this.map.upperRight.x, this.map.upperRight.y);
-            map.place(new Car(map, place, Genes.randomGenes()), true);
+    private void placeAdamAndEve(int numberOfObjects) throws Exception {
+        List<Vector2d> foundPlaces = new ArrayList<Vector2d>();
+        if(constants.width*constants.height < numberOfObjects) throw new Exception("przy tych parametrów ilość początkowych zwierząt musi być <"+constants.width*constants.height);
 
+        while(foundPlaces.size() < numberOfObjects){
+            Vector2d randomVec = Vector2d.createRandomVector(this.map.upperRight.x, this.map.upperRight.y);
+            if(!foundPlaces.contains(randomVec)) foundPlaces.add(randomVec);
+        }
+
+        for(Vector2d place : foundPlaces){
+            map.place(new Car(map, place, Genes.randomGenes()), true);
         }
     }
 

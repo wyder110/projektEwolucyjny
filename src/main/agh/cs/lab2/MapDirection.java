@@ -1,5 +1,7 @@
 package agh.cs.lab2;
 
+import java.util.Random;
+
 public enum MapDirection {
     NORTH(0),
     NORTHEAST(1),
@@ -55,5 +57,9 @@ public enum MapDirection {
         if(this.equals(MapDirection.NORTHWEST) || this.equals(MapDirection.WEST) || this.equals(MapDirection.SOUTHWEST)) x = -1;
         if(this.equals(MapDirection.EAST) || this.equals(MapDirection.NORTHEAST) || this.equals(MapDirection.SOUTHEAST)) x = 1;
         return new Vector2d(x,y);
+    }
+    public static MapDirection randomMapDirection(){
+        int rand = new Random().nextInt(8);
+        return MapDirection.values()[rand];
     }
 }

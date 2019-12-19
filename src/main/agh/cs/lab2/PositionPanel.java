@@ -12,17 +12,33 @@ public class PositionPanel extends JPanel {
     public PositionPanel(Simulation simulation, PositionFrame frame){
         this.simulation = simulation;
         this.frame = frame;
+
+
     }
 
-//    @Override
-//    protected void paintComponent(Graphics g) {
+    @Override
+    protected void paintComponent(Graphics g) {
+//        System.out.println("BBBBBBBBB");
+        g.setColor(Color.BLUE);
+//        g.fillRect(-500,-500,1000,1000);
+        paintBoard(g);
+        paintHays(g);
+        paintAnimals(g);
 //        super.paintComponent(g);
-//    }
+//        Graphics2D g2d = (Graphics2D) g;
+
+
+    }
+
+    @Override
+    public void repaint(Rectangle r) {
+        super.repaint(r);
+    }
 
     protected void paintBoard(Graphics g){
 //        super.paintComponent(g);
         g.setColor(Color.yellow);
-        g.fillRect(frame.start.x, frame.start.y, frame.tileWidth*simulation.width, frame.tileHeight*simulation.height);
+        g.fillRect(frame.start.x, frame.start.y, frame.tileWidth*simulation.constants.width, frame.tileHeight*simulation.constants.height);
 
         g.setColor(Color.green);
 

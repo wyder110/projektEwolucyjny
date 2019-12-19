@@ -20,14 +20,14 @@ public class CarInformationFrame extends JFrame {
         setSize(400,400);
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(6,1));
+        panel.setLayout(new GridLayout(7,1));
 
         JLabel status = new JLabel();
         JLabel kidsAmount = new JLabel();
-        JLabel ancestorsAmount = new JLabel();
         JLabel bornEra = new JLabel();
         JLabel genes = new JLabel();
         JButton saveToFile = new JButton("Zapisz do pliku");
+
         saveToFile.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -41,14 +41,15 @@ public class CarInformationFrame extends JFrame {
 
 
         kidsAmount.setText("\nIlość dzieci " + car.kidList.size() );
-        ancestorsAmount.setText("\nIlość wszystkich potomków " + car.ancestorsAmount());
         bornEra.setText("\nUrodzony w erze " + car.eraBorn);
         genes.setText("\nGeny: " + car.genes);
 
 
+
+        panel.add(kidsAncestorsAfterNEras());
+
         panel.add(status);
         panel.add(kidsAmount);
-        panel.add(ancestorsAmount);
         panel.add(bornEra);
         panel.add(genes);
         panel.add(saveToFile);
@@ -73,7 +74,6 @@ public class CarInformationFrame extends JFrame {
 
 
         json.put("kidsAmount", car.kidList.size());
-        json.put("ancestorsAmount", car.ancestorsAmount());
         json.put("bornEra", car.eraBorn);
         json.put("genes", car.genes.toString());
 
@@ -82,10 +82,39 @@ public class CarInformationFrame extends JFrame {
         SimpleDateFormat formatter = new SimpleDateFormat("HH:mm:ss");
 //        System.out.println(formatter.format(date));
 
-        try (FileWriter file = new FileWriter("./"+formatter.format(date)+".json")) {
+        try (FileWriter file = new FileWriter("./animalInfo"+formatter.format(date)+".json")) {
             file.write(json.toJSONString());
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private JPanel kidsAncestorsAfterNEras(){
+
+        JPanel kidsAfterNEras = new JPanel();
+        kidsAfterNEras.setLayout(new GridLayout(2,2));
+
+        JTextField era = new JTextField("Wpisz numer ery (<"+car.map.era+")");
+
+        JButton button = new JButton("Rachuj!");
+
+        JLabel kids = new JLabel();
+        JLabel ancestors = new JLabel();
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                int eraInt = Integer.parseInt(era.getText());
+                kids.setText("Liczba wszystkich dzieci po " + eraInt + " erach: " + car.kidAmountInEra(eraInt));
+            }
+        });
+        kidsAfterNEras.add(era);
+        kidsAfterNEras.add(button);
+        kidsAfterNEras.add(kids);
+        kidsAfterNEras.add(ancestors);
+
+
+
+        return kidsAfterNEras;
     }
 }

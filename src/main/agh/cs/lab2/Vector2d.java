@@ -53,7 +53,12 @@ public class Vector2d {
     public static Vector2d createRandomVector(int width, int heigth){
         return new Vector2d(new Random().nextInt(width), new Random().nextInt(heigth));
     }
-
+    public static Vector2d createRandomVectorOutsideJungle(Vector2d start, Vector2d end, Vector2d startJungle, Vector2d endJungle){
+        while(true){
+            Vector2d pom = new Vector2d(new Random().nextInt(end.x-start.x)+start.x, new Random().nextInt(end.y-start.y)+start.y);
+            if(!(pom.follows(startJungle) && pom.precedes(endJungle))) return pom;
+        }
+    }
     public Vector2d returnNotOutOfBounds(Vector2d upperRight){
         int xx = this.x;
         int yy = this.y;
